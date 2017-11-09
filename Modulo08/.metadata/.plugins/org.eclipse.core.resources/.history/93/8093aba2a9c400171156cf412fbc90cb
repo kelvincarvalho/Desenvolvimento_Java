@@ -1,0 +1,40 @@
+package br.com.seniorsolution.curso;
+
+import java.util.ArrayList;
+
+
+public class CursoSistemas  implements Pool<Disciplina>{
+	
+java.util.List<Disciplina> disciplinas;
+	
+	public CursoPool() {
+		disciplinas = new ArrayList<>();
+		disciplinas.add(new Disciplina());
+		funcionarios.add(new Funcionario("Debora", "Analista"));
+		funcionarios.add(new Funcionario("Kelvin", "Estagiario"));
+		
+	}
+	
+
+
+	@Override
+	public void liberar(Funcionario t) {
+		funcionarios.add(t);
+		
+	}
+
+	@Override
+	public Disciplina ocupar() {
+		if(disciplinas.size() >0) {
+			return this.disciplinas.remove(0);
+		}
+		return null;
+	}
+
+	@Override
+	public void liberar(Disciplina t) {
+		disciplinas.add(t);
+		
+	}
+	
+}

@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Incluir Usuario</title>
+</head>
+<body>
+<h1>Cadastre um usuario</h1>
+
+<form action=<c:url value="/cadusuario"/> method="post">
+	
+	<label>Nome do Usuário</label><br/>
+	<input type="text" name="nome"><br/><br/>
+	
+	<label>Senha do Usuário</label><br/>
+	<input type="password" name="senha"><br/><br/>
+	
+	
+	<label>Nivel de Acesso: </label><br/>
+	<select name="nivel">
+		
+		 <option value="1">Nivel 1</option>
+		 <option value="2">Nivel 2</option>
+ 		<option value="3">Nivel 3</option>
+
+	</select><br/><br/>
+	
+	
+	<input type="submit" value="Incluir Usuario">
+</form>
+	${mensagem}
+
+</body>
+</html>

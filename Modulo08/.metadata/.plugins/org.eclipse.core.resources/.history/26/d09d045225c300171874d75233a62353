@@ -1,0 +1,24 @@
+package br.com.seniorsolution.objectpool;
+
+import java.awt.List;
+
+public class FuncionarioPool implements Pool<Funcionario> {
+	
+	List<Funcionario> funcionario;
+	
+	public funcionarioPool() {
+	}
+	
+	@Override
+	public Funcionario ocupar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void liberar(Funcionario t) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

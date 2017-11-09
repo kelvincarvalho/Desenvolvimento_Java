@@ -1,0 +1,27 @@
+package br.com.seniorsolution.abstractfactory;
+
+public class TesteComunicadorFactory {
+
+	public static void main(String[] args) {
+		//FABRICA VISA
+		ComunicacaoFactory factory1 = new VisaComunicacaoFactory();
+		String transacao1 = "Valor-> R$ 2.300 - Data:06/11";
+		Emissor emissor1 = factory1.createEmissor();
+		emissor1.enviar(transacao1);
+		
+		Receptor receptor1 = factory1.createReceptor();
+		String mensagem1 = receptor1.receber();
+		System.out.println("VISA: "+mensagem1);
+		
+		//FABRICA MASTER
+		ComunicacaoFactory factory2 = new MasterComunicacaoFactory();
+		String transacao2 = "Valor-> R$ 2.500 - Data:06/11";
+		Emissor emissor2 = factory2.createEmissor();
+		emissor2.enviar("VISA: "+transacao2);
+		
+		Receptor receptor2 = factory2.createReceptor();
+		String mensagem2 = receptor2.receber();
+		System.out.println(mensagem2);
+	}
+
+}

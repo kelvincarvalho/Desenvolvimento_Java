@@ -1,0 +1,15 @@
+package br.com.seniorsolution.bridge;
+
+public class Recibo implements Documento {
+
+	private String emissor;
+	private String favorecido;
+	private double valor;
+	
+	@Override
+	public void gerarArquivo() {
+		
+		
+	}
+
+}

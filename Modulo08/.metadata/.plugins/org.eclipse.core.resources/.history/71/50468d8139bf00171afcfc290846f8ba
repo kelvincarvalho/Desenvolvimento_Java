@@ -1,0 +1,10 @@
+package br.com.seniorsolution.singleton;
+
+public class AppGenericDao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

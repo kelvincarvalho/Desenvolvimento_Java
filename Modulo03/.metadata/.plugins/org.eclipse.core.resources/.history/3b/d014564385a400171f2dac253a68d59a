@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Consulta</title>
+</head>
+<body>
+	
+	
+	<h1>Consulta a Pedido e Itens</h1>
+	<fieldset>
+		
+		<legend>Tipos de Consulta</legend>
+		<form action="">
+			<input type="radio" name="opcao" value="pedidos" cheked="checked">Pedidos por Cliente<br/>
+			<input type="radio" name="opcao" value="itens" cheked="checked">Itens por Cliente<br/>
+		
+		</form>
+	
+	
+	</fieldset>
+		
+		
+	${mensagem}
+
+</body>
+</html>

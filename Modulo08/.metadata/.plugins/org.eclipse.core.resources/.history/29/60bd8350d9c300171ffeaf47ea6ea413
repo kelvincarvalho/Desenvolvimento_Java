@@ -1,0 +1,7 @@
+package br.com.seniorsolution.bridge;
+
+public class TesteRecibo {
+	public static void main(String[] args) {
+		Recibo recibo = new Recibo("FIAP", "KELVIN", 500)
+	}
+}

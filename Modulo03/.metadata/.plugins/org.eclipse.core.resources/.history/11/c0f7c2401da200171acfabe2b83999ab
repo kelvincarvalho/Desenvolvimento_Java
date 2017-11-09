@@ -1,0 +1,22 @@
+package br.com.seniorsolution.helper;
+
+import javax.persistence.EntityManager;
+
+import br.com.seniorsolution.entidade.Forum;
+
+public class ForumHelper {
+	
+	private EntityManager em;
+	
+	public ForumHelper(EntityManager em) {
+		this.em = em;
+	}
+	
+	public void salvar(Forum forum) throws Exception {
+		
+		em.getTransaction().begin(); //INICIA A TRANSAÇÃO
+		em.persist(forum); //PASSA O OBJETO FORUM
+		em.getTransaction().commit(); // FINALIZA A TRANSAÇÃO
+		
+	}
+}

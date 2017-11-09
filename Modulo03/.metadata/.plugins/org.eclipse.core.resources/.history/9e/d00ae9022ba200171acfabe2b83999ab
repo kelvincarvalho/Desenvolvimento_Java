@@ -1,0 +1,60 @@
+package br.com.seniorsolution.entidades;
+
+import java.io.Serializable;
+
+public class Endereco implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+	private int id;
+	
+	private Cliente cliente;
+	
+	private String rua;
+	
+	private String cidade;
+	
+	private String cep;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public String getRua() {
+		return rua;
+	}
+
+	public void setRua(String rua) {
+		this.rua = rua;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	
+	
+}

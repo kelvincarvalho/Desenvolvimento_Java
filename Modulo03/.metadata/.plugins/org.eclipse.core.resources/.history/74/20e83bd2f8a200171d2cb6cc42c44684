@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<%@page import="java.util.List"%>
+<%@page import="br.com.seniorsolution.entidades.Cliente"%>
+<%@page import="br.com.seniorsolution.dao.GenericDao"%>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Enderecos</title>
+</head>
+<body>
+	<h1>Cadastro de Endereços para Clientes</h1>
+	<form action ="">
+		<label>Cliente: </label><br/>
+		<% GenericDao<Cliente> dao = new GenericDao <>(Cliente.class);
+		List<Cliente> clientes = dao.listar();
+					
+		%>
+		
+		
+		
+		<select name="cliente">
+		<% for(Cliente intem: clientes){%>
+			<option value="1">Impacta</option>
+		<% }%>
+			
+			
+			<option value="2">Senior</option>
+			<option value="3">Shopping</option>
+		</select>
+	</form>
+
+</body>
+</html>

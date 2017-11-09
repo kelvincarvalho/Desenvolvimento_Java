@@ -1,0 +1,29 @@
+package br.com.seniorsolution.adapter;
+
+public class TesteControlePonto {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		//USANDO A CLASSE ORIGINAL
+		System.out.println("Classe ControlePonto");
+		ControlePonto cp = new ControlePonto();
+		Funcionario f= new Funcionario("Kelvin", "Estagiário");
+		cp.registrarEntrada(f);
+		
+		Thread.sleep(5000);
+		
+		cp.registrarSaida(f);
+		
+		
+		//USANDO AO ADAPTER
+		System.out.println("Classe ControlePontoAdapter");
+		ControlePonto cpa = new ControlePonto();
+		Funcionario fa= new Funcionario("Kelvin Adapter", "Estagiário");
+		cpa.registrarEntrada(fa);
+				
+		Thread.sleep(5000);
+				
+		cp.registrarSaida(fa);
+	}
+
+}

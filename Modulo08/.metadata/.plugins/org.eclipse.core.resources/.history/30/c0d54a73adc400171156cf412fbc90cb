@@ -1,0 +1,12 @@
+package br.com.seniorsolution.app;
+
+import java.awt.Cursor;
+
+public class AppFaculdade {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

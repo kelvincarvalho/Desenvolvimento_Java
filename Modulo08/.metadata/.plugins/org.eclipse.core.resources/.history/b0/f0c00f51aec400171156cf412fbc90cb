@@ -1,0 +1,26 @@
+package br.com.seniorsolution.app;
+
+import java.awt.Cursor;
+
+import br.com.seniorsolution.curso.Disciplina;
+import br.com.seniorsolution.curso.Pool;
+
+
+
+public class AppFaculdade {
+
+	public static void main(String[] args) {
+		Pool<Disciplina> pool = new Disciplina();
+		Funcionario funcionario = pool.ocupar();
+		
+		System.out.println("--LISTA DE FUNCIONARIOS OCUPADOS--");
+		while(funcionario !=null) {
+			System.out.println(funcionario.getNome());
+			System.out.println(funcionario.getCargo());
+			System.out.println();
+			funcionario= pool.ocupar();
+		}
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package br.com.seniorsolution.factory;
+
+public class TesteEmissoresCreator {
+
+	public static void main(String[] args) {
+		
+		EmissorCreator creator = new EmissorCreator();
+		
+	}
+
+}

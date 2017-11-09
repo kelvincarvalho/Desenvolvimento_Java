@@ -1,0 +1,37 @@
+package br.com.seniorsolution.builder;
+
+import java.util.Calendar;
+
+public class BancoItauBoleto implements Boleto{
+
+	@Override
+	public String getSacado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getCedente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getValor() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Calendar getVencimento() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getNossoNumero() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

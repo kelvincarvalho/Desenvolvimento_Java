@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Exemplo 02 - JQUERY</title>
+<style>
+	.ok{
+		border: 1px solid green;
+		background-color: lightgreen;
+		color: green;
+		padding: 20px;
+		width: 100px;
+	}
+	.erro{
+		border: 1px solid red;
+		background-color: Lightcoral;
+		color: red;
+		padding: 20px;
+		width: 100px;
+	}
+
+</style>
+</head>
+<body>
+	<h1>Dados do Aluno</h1>
+	Nome: 
+	<input type="text" id="name" size="20"/><br/><br/>
+	
+	Idade: 
+	<input type="text" id="idade" size="3"/><br/><br/>
+	
+	Curso:
+	<select id="lista"></select><br/><br/>
+	
+	<input type="button" id="btn_enviar" value="Enviar"/><br/><br/>
+	
+	<div id="resposta"></div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="exemplo_jquery02.js"></script>
+	
+</body>
+</html>

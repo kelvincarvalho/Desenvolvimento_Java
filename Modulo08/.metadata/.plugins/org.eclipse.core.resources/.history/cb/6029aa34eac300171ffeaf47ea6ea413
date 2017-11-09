@@ -1,0 +1,12 @@
+package br.com.seniorsolution.flyweight;
+
+public class TemaHifen implements TemaFlyweight{
+
+	@Override
+	public void imprimir(String titulo, String conteudo) {
+		System.out.println(">> "+titulo+" <<");
+		System.out.println(texto);
+		
+	}
+
+}

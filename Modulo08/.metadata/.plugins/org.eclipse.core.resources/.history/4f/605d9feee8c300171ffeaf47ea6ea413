@@ -1,0 +1,13 @@
+package br.com.seniorsolution.facade;
+
+public class TestePedidoFacade {
+	
+	Pedido pedido = new Pedido("Celular", "Kelvin", "Rua Forte do Triunfo");
+	
+	Estoque estoque = new Estoque();
+	Financeiro financeiro = new Financeiro();
+	PosVenda posVenda = new PosVenda();
+	
+	PedidoFacade facade = new PedidoFacade(estoque, financeiro, posVenda);
+	facade.registrarPedido(pedido);
+}

@@ -1,0 +1,16 @@
+package br.com.seniorsolution.flyweight;
+
+public class TesteTemas {
+	public static void main(String[] args) {
+		ConjuntoDocumentos documentos = new ConjuntoDocumentos();
+		
+		documentos.adicionarDocumento(new Documento(TemaFlyweightFactory.getTema(TemaFlyweightFactory.ASTERISCO), 
+				"TITULO COM ***", "Exemplo de tema com **"));
+		
+		documentos.adicionarDocumento(new Documento(TemaFlyweightFactory.getTema(TemaFlyweightFactory.HIFEN), 
+				"TITULO COM -", "Exemplo de tema com -"));
+		
+		documentos.adicionarDocumento(new Documento(TemaFlyweightFactory.getTema(TemaFlyweightFactory.SENIOR), 
+				"TITULO COM ***", "Exemplo de tema com **"));
+	}
+}

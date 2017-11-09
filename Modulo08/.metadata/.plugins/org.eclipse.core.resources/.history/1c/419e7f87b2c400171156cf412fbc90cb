@@ -1,0 +1,36 @@
+package br.com.seniorsolution.curso;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CursoCiencia implements Pool<Curso>{
+	
+List<Curso> disciplinas;
+	
+	public CursoCiencia() {
+		
+		disciplinas = new ArrayList<>();
+		disciplinas.add(new Curso("C#", "Ciencia da Computacao"));
+		disciplinas.add(new Curso("x","Ciencia da Computacao"));
+		disciplinas.add(new Curso("Z","Ciencia da Computacao"));
+			
+	}
+	
+
+
+	@Override
+	public Curso ocupar() {
+		if(disciplinas.size() >0) {
+			return this.disciplinas.remove(0);
+		}
+		return null;
+	}
+
+	@Override
+	public void liberar(Curso t) {
+		disciplinas.add(t);
+		
+	}
+	
+	
+}

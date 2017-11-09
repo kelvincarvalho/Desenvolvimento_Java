@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+
+	body{
+		background:#C1FFC1; 
+	}
+	
+	/*Seletor de Classe*/
+	.margem{
+		margin-left: 20px;;
+		margin-right: 20px;
+		padding: 25px;
+	}
+	
+	.nav{
+		font-family: Verdana, Tahoma;
+		font-size: 30px;
+		background-color:#436EEE;	
+	}
+	
+	.section{
+		border: 10px solid #436EEE;
+		color: #00008B;
+		border-radius: 5px;
+	}
+	
+	header{
+		font-weight: bold;
+		color:#27408B;
+	}
+	
+	article{
+		font-family: Tahoma;
+		font-size: 12px;
+	}
+	
+	footer{
+		font-size: : 10px;
+		background-color: #F0FFFF;
+		color:#00008B;
+		text-align: center;
+	}

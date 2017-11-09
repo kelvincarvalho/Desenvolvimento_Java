@@ -1,0 +1,109 @@
+<div class="container">
+	<div class="margem">
+		<h2>Cadastro de Produtos</h2>
+	</div>
+	<section>
+		<div class="row">
+			<form action="produto" method="post">
+				<div class="col-md-6">
+					<div id="mensagemdb"></div>
+
+					<div class="form-group row">
+						<label for="codico" class="col-sm-3 col-form-label"> Código:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="codigo" name="codigo">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="descricao" class="col-sm-3 col-form-label"> Descrição:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="descricao" name="descricao" />
+
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="preco" class="col-sm-3 col-form-label"> Preço:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="preco" name="preco"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="fabricante" class="col-sm-3 col-form-label">
+							Fabricante:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="fabricante"
+								name="fabricante">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-sm-3">
+							<button type="button" id="btnEnviar" onclick="submit();" class="btn btn-info">
+								<span class="glyphicon glyphicon-pencil"></span> Enviar
+							</button>
+						</div>
+						<div id="mensagemdb">
+							${mensagem}
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<br><br>
+	<section>
+		<div class="row">
+			<form action="contato" method="post">
+				<div class="col-md-6">
+					<div id="mensagemdb"></div>
+
+					<div class="form-group row">
+						<label for="nome" class="col-sm-3 col-form-label"> Nome:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="nome" name="nome">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="telefone" class="col-sm-3 col-form-label"> Telefone:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="telefone" name="telefone" />
+
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="preco" class="col-sm-3 col-form-label"> Preço:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="preco" name="preco"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="fabricante" class="col-sm-3 col-form-label">
+							Fabricante:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="fabricante"
+								name="fabricante">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-sm-3">
+							<button type="button" id="btnEnviar" onclick="submit();" class="btn btn-info">
+								<span class="glyphicon glyphicon-pencil"></span> Enviar
+							</button>
+						</div>
+						<div id="mensagemdb">
+							${mensagem}
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</div>
+

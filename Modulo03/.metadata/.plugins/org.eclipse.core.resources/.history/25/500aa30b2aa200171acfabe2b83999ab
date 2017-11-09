@@ -1,0 +1,14 @@
+package br.com.seniorsolution.entidades;
+
+import java.util.Set;
+
+public class Cliente {
+
+	private static final long serialVersionUID = 1L;
+	
+	private int id;
+	
+	private String empresa;
+	
+	private Set<E>
+}

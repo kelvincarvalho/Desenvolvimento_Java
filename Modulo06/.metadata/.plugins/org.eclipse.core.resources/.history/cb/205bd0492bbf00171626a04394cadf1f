@@ -1,0 +1,30 @@
+
+<!DOCTYPE html >
+<html ng-app="appAngular">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+	<style>
+		table, tr, td, th{
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body ng-controller="Principal as ctl">
+	
+	<h2>Serviço HTTP para listar Produtos</h2>
+	
+	<table>
+		
+	</table>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script>
+	angular.module("appAngular",[]).controller("Principal",[function(){
+		
+	}]);
+	</script>
+</body>
+</html>

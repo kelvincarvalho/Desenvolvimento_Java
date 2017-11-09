@@ -1,0 +1,26 @@
+
+<!DOCTYPE html >
+<html ng-app="appAngular">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+	<style>
+	.finalizado{
+		color: blue;
+	}
+	.pendente{
+		color: red;
+	}
+	</style>
+</head>
+<body ng-controller="Principal as ctl">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script>
+	angular.module("appAngular",[]).controller("Principal",[function(){
+		
+	}]);
+	</script>
+</body>
+</html>

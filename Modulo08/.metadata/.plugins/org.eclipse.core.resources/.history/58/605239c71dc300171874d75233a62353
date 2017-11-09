@@ -1,0 +1,33 @@
+package br.com.seniorsolution.prototype;
+
+import java.util.Calendar;
+import java.util.Set;
+
+public class Anuncio implements Prototype<Anuncio> {
+	private String nome;
+	private Calendar data;
+	private Set<String> palavrasChave;
+	
+	public Anuncio(String nome, Calendar data, Set<String> palavras) {
+		this.nome = nome;
+		this.data = data;
+		this.palavrasChave = palavras;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public Calendar getData() {
+		return data;
+	}
+
+	public Set<String> getPalavrasChave() {
+		return palavrasChave;
+	}
+
+	public Anuncio clone () {
+		
+	}
+	
+}

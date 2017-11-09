@@ -1,0 +1,7 @@
+Recibo
+Emissor: FIAP
+Favorecido: KELVIN
+Valor: 500.0Recibo
+Emissor: FIAP
+Favorecido: KELVIN
+Valor: 500.0

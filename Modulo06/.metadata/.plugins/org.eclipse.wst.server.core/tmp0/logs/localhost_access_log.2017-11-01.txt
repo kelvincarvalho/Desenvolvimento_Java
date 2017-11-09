@@ -1,0 +1,9 @@
+127.0.0.1 - - [01/Nov/2017:15:58:35 -0200] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:36 -0200] "GET /07_GestaoProdutos/ HTTP/1.1" 200 2129
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:39 -0200] "GET /07_GestaoProdutos/css/estilos.css HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:39 -0200] "GET /07_GestaoProdutos/imagens/curso-presencial.jpg HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:39 -0200] "GET /07_GestaoProdutos/imagens/curso-incompany.jpg HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:39 -0200] "GET /07_GestaoProdutos/imagens/curso-online.jpg HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:46 -0200] "GET /07_GestaoProdutos/wsjson HTTP/1.1" 200 427
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:15:58:59 -0200] "GET /07_GestaoProdutos/exemploangularJS_08.jsp HTTP/1.1" 200 1128
+0:0:0:0:0:0:0:1 - - [01/Nov/2017:16:11:26 -0200] "GET /07_GestaoProdutos/exemploangularJS_08.jsp HTTP/1.1" 200 1128

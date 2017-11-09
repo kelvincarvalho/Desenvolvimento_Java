@@ -1,0 +1,11 @@
+package br.com.seniorsolution.bridge;
+
+public class TesteRecibo {
+	public static void main(String[] args) {
+		GeradorAquivos geradorAquivos = new GeradorArquivosTxt();
+		
+		Recibo recibo = new Recibo("FIAP", "KELVIN", 500, geradorAquivos);
+		recibo.gerarArquivo();
+		System.out.println("OK");
+	}
+}

@@ -1,0 +1,11 @@
+package br.com.seniorsolution.prototype;
+
+public class TestePrototype {
+
+	public static void main(String[] args) {
+		String nome = "Muito sono disponivel";
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package br.com.seniorsolution.adapter;
+
+public class TesteControlePonto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

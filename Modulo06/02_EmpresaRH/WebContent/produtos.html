@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Apresentação dos Produtos</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/produtos.css">
+
+</head>
+<body>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Impacta RH</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#treinamento">Treinamento</a></li>
+					<li><a href="#consultoria">Consultoria</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="slides" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#slides" data-slide-to="0" class="active"></li>
+					<li data-target="#slides" data-slide-to="1" ></li>
+					<li data-target="#slides" data-slide-to="2" ></li>
+				</ol>
+				<!-- CONTEUDO SLIDES -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="imagens/carousel01.jpg"/>
+					</div>
+					<div class="item">
+						<img src="imagens/carousel02.jpg"/>
+					</div>
+					<div class="item">
+						<img src="imagens/carousel03.jpg"/>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#slides" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			
+			<a class="right carousel-control" href="#slides" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Proxima</span>
+			</a>
+			
+		</div>
+	</div>
+	
+	<div class="container body-content clearfix">
+		<section id="treinamento">
+		<h1>Treinamentos</h1>
+		<p> 
+			A empresa oferece treinamentyos em diversas areas, nas seguintes modalidades:
+		</p>
+		<ul>
+			<li>Presencial</li>
+			<li>Online</li>
+			<li><i>In-Company</i></li>
+		</ul>
+		
+		<div class="rowm center-image">
+			<div class="col-md-4">
+				<h3>Presencial</h3>
+				<img src="imagens/curso-presencial.jpg" class="img-circle margin-image"/>
+				<p>
+					Nesta modalidade os cursos sao oferecidos em nossa unidade localizada na Avenida Paulista.
+					Existem diversas opções de horário.<br/>
+					Consultar a grade de horários para maiores informações.
+				</p>
+			</div>
+			
+			<div class="col-md-4">
+			<h3>Online</h3>
+				<img src="imagens/curso-online.jpg" class="img-circle margin-image"/>
+				<p>
+					Nesta modalidade os cursos sao oferecido em nossa plataforma Web.
+					Necessita de estudar epossui horários diversificados?<br/>
+				
+				</p>
+			
+			</div>
+			
+			<div class="col-md-4">
+			<h3><i>In-Company</i></h3>
+				<img src="imagens/curso-incompany.jpg" class="img-circle margin-image"/>
+				<p>
+					Nesta modalidade oferecemos treinamentos personalizados para sua empresa. Atendemos a necessidade especificada, temos 
+					uma equipe altamente capacitada para levar o conteudo que voce precisa<br/>
+				</p>
+			</div>
+		</div>
+		
+		</section>
+		
+		<section id="consultoria">
+			<h1>Consultoria</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="imagens/consultoria.jpg" class="img-rounded"/>
+				</div>
+				
+				<div class="col-md-8">
+					<p>
+						De modo geral, toda empresa deseja obter lucros, a custos reduzidos. No que diz respeito ao gerenciamento de processos,
+						temos consultores especializados para ajudar nossos clientes a atingirem este objetivo.
+						Como? Aplicando da melhor forma os recursos disponiveis, como infraestrutura, pessoas, sistemas, folhas de pagamento, entre outros.<br/>
+						Neste sentido a empresa colabora para que o principal objetivo do negocio seja consolidado, dispensando seus clientes de ocupações
+						irrelevantes.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="contato">
+			<h1>Contato</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="imagens/contato.jpg" class="img-rounded"/>
+				</div>
+				
+				<div class="col-md-8">
+					
+					<div class="nome">
+    					<label for="inputNome" class="col-sm-4 col-form-label">Nome</label>
+   						 <div class="col-sm-8">
+     				 		<input type="nome" class="form-control" id="inputNome" placeholder="Nome">
+  						</div>
+  					</div><br><br>
+  					
+  					<div class="email">
+    					<label for="inputEmail" class="col-sm-4 col-form-label">Seu e-mail</label>
+   						 <div class="col-sm-8">
+     				 		<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+  						</div>
+  					</div><br><br>
+						
+					<div class="assunto">
+				      <label for="inputAssunto" class="col-sm-4 col-form-label">Selecione o Assunto</label>
+				     	<div class="col-md-8">
+				     	 <select id="inputAssunto" class="form-control">
+				       		 <option selected>Reclamações</option>
+				       		 <option selected>Dúvidas</option>
+				       		 <option selected>Informações sobre Cursos</option>
+				      	</select>
+				      	</div>
+				    </div><br><br>
+				    
+				    <div class="texto">
+				    <label for="inpuTexto" class="col-sm-4 col-form-label">Comente</label>
+				   		 <textarea class="col-sm-8 col-form-label" id="texto" rows="3" ></textarea>
+				    </div><br><br>
+				    
+				    <div class="botao">
+				    	<input type="button" class="form-control" value="Enviar" id="botao">
+				    </div>
+				    
+					
+				</div>
+			</div>
+		</section>
+		
+		
+	</div>
+	<footer class="footer">
+		<p> Desenvolvido para os estagiários da Senior Solution</p>
+		<p> Copyright 2017 - Todos os direitos reservados </p>
+	</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>

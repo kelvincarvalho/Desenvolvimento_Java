@@ -1,0 +1,24 @@
+package br.com.seniorsolution.controllers;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import br.com.seniorsolution.jdbc.JdbcCursoDao;
+
+public class UsuarioController {
+	
+	@RequestMapping("/usuario/cadastro")
+	public String incluir(ModelMap model) {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("beanJdbc.xml");
+
+		try {
+			model.addAttribute("usuario");
+			return "cadastro/incluirUsuario";
+		} catch (Exception e) {
+			return "pagina/erro";
+		}
+	}
+}

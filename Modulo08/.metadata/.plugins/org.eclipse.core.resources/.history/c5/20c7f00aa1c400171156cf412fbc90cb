@@ -1,0 +1,31 @@
+package br.com.seniorsolution.mediator;
+
+import java.util.ArrayList;
+
+import br.com.seniorsolution.estagiario.Estagiario;
+
+public class MensagemMediator implements Mediator {
+	
+	
+	 protected ArrayList<Estagiario> estagiarios;
+	 
+	 public MensagemMediator() {
+	        estagiarios = new ArrayList<Estagiario>();
+	    }
+	 
+	  public void adicionarColleague(Estagiario estagiario) {
+	        estagiarios.add(estagiario);
+	    }
+	
+	@Override
+	public void enviar(String mensagem, Estagiario estagiario) {
+		for (Estagiario dupla : estagiarios) {
+            if (dupla != estagiario) {
+                definirProtocolo(dupla);
+                dupla.receberMensagem(mensagem);
+            }
+        }
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Endereços - JSTL</title>
+</head>
+<body>
+	<h1>Cadastro de Endereços para Clientes - JSTL</h1>
+	<form action="enderecos" method="post">
+		
+		<label for="cliente">Cliente:</label>
+		
+		<select name="cliente">
+			
+			<option value=""></option>
+			
+		</select><br/><br/>
+		
+		<label>Rua: </label>
+		<input type="text" name="rua" id="rua" size="25"/><br/><br/>
+		
+		<label>Cidade: </label>
+		<input type="text" name="cidade" id="cidade" size="22"/><br/><br/>
+		
+		<label>CEP: </label>
+		<input type="text" name="cep" id="cep" size="24"/><br/><br/>
+		
+		<input type="submit" value="Enviar">
+		
+	</form>
+	${mensagem}
+
+</body>
+</html>

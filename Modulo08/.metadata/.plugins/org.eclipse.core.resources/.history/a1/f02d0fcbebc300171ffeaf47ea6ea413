@@ -1,0 +1,8 @@
+package br.com.seniorsolution.flyweight;
+
+import java.util.Map;
+
+public class TemaFlyweightFactory {
+	
+	private static Map<Class<? extends TemaFlyweight>, TemaFlyweight>
+}

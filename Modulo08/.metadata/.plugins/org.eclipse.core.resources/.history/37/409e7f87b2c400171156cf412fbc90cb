@@ -1,0 +1,37 @@
+package br.com.seniorsolution.curso;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class CursoSistemas  implements Pool<Curso>{
+	
+	List<Curso> disciplinas;
+	
+	public CursoSistemas() {
+		
+		
+		disciplinas = new ArrayList<>();
+		disciplinas.add(new Curso("Java", "Sistemas"));
+		disciplinas.add(new Curso("Estrutura de Dados","Sistemas"));
+		disciplinas.add(new Curso("C","Sistemas"));
+			
+	}
+	
+
+
+	@Override
+	public Curso ocupar() {
+		if(disciplinas.size() >0) {
+			return this.disciplinas.remove(0);
+		}
+		return null;
+	}
+
+	@Override
+	public void liberar(Curso t) {
+		disciplinas.add(t);
+		
+	}
+	
+}

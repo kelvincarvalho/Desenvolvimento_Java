@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Desenvolvimento_Java\Modulo06\07_GestaoProdutos"/>
+			<item value="C:\Desenvolvimento_Java\Modulo06\07_GestaoProdutosPro"/>
+			<item value="C:\Desenvolvimento_Java\Modulo04\01_SpringWeb"/>
+			<item value="C:\Users\ta4704\Desktop\Agenda2SIR"/>
+			<item value="C:\Desenvolvimento_Java\Modulo03\02_VendasJPA"/>
+			<item value="X:\Tarde\Paulista47\Aluno4\Kelvin_Carvalho\Desenvolvimento_Java\Modulo06\06_IndexdDb"/>
+			<item value="X:\Tarde\Paulista47\Aluno4\Kelvin_Carvalho\Desenvolvimento_Java\Modulo06\05_Storage"/>
+			<item value="C:\Users\ta4704\Downloads\Agenda2SIR"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="418" key="DIALOG_X_ORIGIN"/>
+		<item value="251" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

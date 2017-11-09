@@ -1,0 +1,10 @@
+package br.com.seniorsolution.curso;
+
+public class Curso {
+	
+	private String nome;
+	private String disciplina;
+	
+	
+
+}

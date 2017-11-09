@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Enderecos</title>
+</head>
+<body>
+	<h1>Cadastro de Endereços para Clientes</h1>
+	<form action ="">
+		<label>Cliente: </label>
+	</form>
+
+</body>
+</html>

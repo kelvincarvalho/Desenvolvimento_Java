@@ -1,0 +1,12 @@
+package br.com.seniorsolution.abstractfactory;
+
+public class TesteComunicadorFactory {
+
+	public static void main(String[] args) {
+		//FABRICA VISA
+		ComunicacaoFactory factory1 = new VisaComunicacaoFactory();
+		ComunicacaoFactory factory2 = new MasterComunicacaoFactory();
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package br.com.seniorsolution.factory;
+
+import javax.management.RuntimeErrorException;
+
+public class EmissorCreator {
+	public Emissor create(TipoEmissor tipo) {
+		switch(tipo) {
+			case SMS: return new EmissorSMS();
+			case EMAIL: return new EmissorEmail();
+			case MAQUINA: return new EmissorMaquininha();
+			default: throw new RuntimeException("Opção Invalida");
+		}
+		
+	}
+}

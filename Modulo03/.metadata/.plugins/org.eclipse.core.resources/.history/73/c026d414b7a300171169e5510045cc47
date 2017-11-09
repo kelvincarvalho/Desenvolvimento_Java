@@ -1,0 +1,8 @@
+package br.com.seniorsolution.beans;
+
+import java.util.List;
+
+public class BeanVendas {
+
+	public List<Cliente>
+}

@@ -1,0 +1,7 @@
+erro.escola.descricao=A descricao deve ter entre {min} e {max} caracteres
+erro.escola.endereco=O endereco deve ter entre {min} e {max} caracteres
+erro.escola.dataFundacao=A data deve ser numerica
+erro.curso.descricao=A descricao deve ter entre {min} e {max} caracteres
+erro.disciplina.descricao=A disciplina deve ter entre {min} e {max} caracteres
+erro.usuario.nome=O nome do usuario deve ter entre {min} e {max} caracteres
+erro.usuario.senha=Aa sua senha deve conter no minimo {min} caracteres e no maximo {max} caracteres

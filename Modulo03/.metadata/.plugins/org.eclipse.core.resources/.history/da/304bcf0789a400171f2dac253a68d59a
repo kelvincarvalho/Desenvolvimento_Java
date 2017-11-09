@@ -1,0 +1,68 @@
+package br.com.seniorsolution.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import br.com.seniorsolution.dao.GenericDao;
+import br.com.seniorsolution.entidades.Cliente;
+import br.com.seniorsolution.entidades.Item;
+import br.com.seniorsolution.entidades.Pedido;
+import br.com.seniorsolution.entidades.PedidoPK;
+
+@WebServlet("/consulta")
+public class ServletConsulta extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+    public ServletConsulta() {
+        super();
+       
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.sendRedirect("cadConsulta.jsp");
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+
+		try {
+			
+			String opcao = request.getParameter("opcao");
+			String resposta="";
+			
+			switch (opcao) {
+			case "pedidos":
+				int idCliente = Integer.parseInt(request.getParameter("cliente"));
+				
+				Cliente c = new GenericDao<>(Cliente.class).buscar(idCliente);
+				for (Pedido p : c.getPedidos()) {
+					resposta += p.getPedidoPK()+"<br/>";
+				}
+				
+				break;
+			case "itens": break;
+			resposta="A ser implementado";
+			break;
+			
+			
+			}
+		} catch (Exception e) {
+			 out.print("ERRO: "+ e.getMessage());
+			e.printStackTrace();
+		}
+		
+	}
+
+}

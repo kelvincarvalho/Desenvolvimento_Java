@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Endereços - JSTL</title>
+</head>
+<body>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	<jsp:useBean id="clienteBean" class="br.com.seniorsolution.beans.BeanVendas"></jsp:useBean>
+	
+	<h1>Cadastro de Pedidos - JSTL</h1>
+	<form action="pedidos" method="post">
+		
+		<label for="cliente">Cliente:</label>
+		
+		<select name="cliente">
+			<c:forEach var="item" items="${clienteBean.listaClientes }">
+				<option value="${item.id}">${item.empresa }</option>
+			</c:forEach>
+		</select><br/><br/>
+		
+		<label>Numero do Pedido: </label>
+		<input type="text" name="pedido" id="pedido" size="25"/><br/><br/>
+		
+		<label>Categoria: </label>
+		<select name="categoria">
+ 			<option value="drama">drama</option>
+			 <option value="romance">romance</option>
+			 <option value="acao">acao</option>
+		</select><br/><br/>
+		
+		<label>Data: </label>
+		<input type="text" name="data" id="data" maxlength="10" value="dd/mm/yyyy"/><br/><br/>
+		
+		<input type="submit" size="10" value="Enviar">
+		
+	</form>
+	${mensagem}
+
+</body>
+</html>

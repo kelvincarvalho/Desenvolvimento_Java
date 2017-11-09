@@ -1,0 +1,4 @@
+1506714196545	Rename type 'jdbcEscolaDao'
+1506714938316	Move 'views' to 'lib'
+1506714949055	Move 'views' to 'WEB-INF'
+1506714966923	Move 'views' to 'WebContent'

@@ -1,0 +1,17 @@
+DADOS PESSOAIS
+
+ID: 1
+Nome: Leonardo
+Idade: 20
+Sexo: MASCULINO
+Matricula: 1234578910
+
+Curso: 
+Código: 10
+Descrição: ADS
+Carga Horária: 6000
+Cursos anteriores: [120-Mecatrônica, 130-HTML e CSS, 140-Maven, 150-NodeJS]
+   120-Mecatrônica
+   130-HTML e CSS
+   140-Maven
+   150-NodeJS

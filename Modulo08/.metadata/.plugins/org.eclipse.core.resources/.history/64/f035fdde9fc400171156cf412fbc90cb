@@ -1,0 +1,11 @@
+package br.com.seniorsolution.estagiario;
+
+public class LKestagiario extends Estagiario {
+
+	@Override
+	public void receberMensagem(String mensagem) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

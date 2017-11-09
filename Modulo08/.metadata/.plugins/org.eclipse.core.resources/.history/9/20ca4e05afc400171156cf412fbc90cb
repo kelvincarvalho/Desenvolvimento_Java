@@ -1,0 +1,26 @@
+package br.com.seniorsolution.app;
+
+import java.awt.Cursor;
+
+import br.com.seniorsolution.curso.CursoSistemas;
+import br.com.seniorsolution.curso.Disciplina;
+import br.com.seniorsolution.curso.Pool;
+
+
+
+public class AppFaculdade {
+
+	public static void main(String[] args) {
+		Pool<Disciplina> pool = new CursoSistemas();
+		Disciplina disciplina = pool.ocupar();
+		
+		System.out.println("--LISTA DE Cursos--");
+		while(disciplina !=null) {
+			System.out.println(disciplina.getNomeDisciplina());
+			System.out.println();
+			disciplina = pool.ocupar();
+		}
+		
+	}
+
+}

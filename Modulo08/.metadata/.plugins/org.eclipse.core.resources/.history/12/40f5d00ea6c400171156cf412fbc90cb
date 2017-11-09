@@ -1,0 +1,9 @@
+package br.com.seniorsolution.app;
+
+public class AppFaculdade {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

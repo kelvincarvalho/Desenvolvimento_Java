@@ -1,0 +1,33 @@
+package br.com.seniorsolution.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+public class GenericDao<T> implements Dao<T> {
+	
+	private final Class<T> classe;
+	protected EntityManager EM;
+	
+	public GenericDao(Class<T> classe) {
+		this.classe=classe;
+	}
+	
+	
+	
+	@Override
+	public void adicionar(T entidade) {
+				
+	}
+
+	@Override
+	public List<T> listar() {
+		return null;
+	}
+
+	@Override
+	public T buscar(int id) {
+		return null;
+	}
+	
+}

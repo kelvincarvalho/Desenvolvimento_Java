@@ -1,0 +1,15 @@
+package br.com.seniorsolution.entidades;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Pedido implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	private PedidoPK pedidoPk;
+	
+	private Date dataPedido;
+	
+	private Cliente  cliente;
+}

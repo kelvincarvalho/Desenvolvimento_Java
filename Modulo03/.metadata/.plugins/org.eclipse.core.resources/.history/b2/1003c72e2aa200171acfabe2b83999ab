@@ -1,0 +1,55 @@
+package br.com.seniorsolution.entidades;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+
+@Entity 
+@Table (name ="cliente")
+public class Cliente {
+
+	private static final long serialVersionUID = 1L;
+	
+	private int id;
+	
+	private String empresa;
+	
+	private Set<Pedido> pedidos = new LinkedHashSet<>();
+	
+	private Set<Endereco> enderecos = new LinkedHashSet<>();
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getEmpresa() {
+		return empresa;
+	}
+
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+
+	public Set<Pedido> getPedidos() {
+		return pedidos;
+	}
+
+	public void setPedidos(Set<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	}
+
+	public Set<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+	public void setEnderecos(Set<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+	
+	
+}

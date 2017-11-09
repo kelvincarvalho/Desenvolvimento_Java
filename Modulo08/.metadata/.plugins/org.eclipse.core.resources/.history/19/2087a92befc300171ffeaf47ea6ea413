@@ -1,0 +1,24 @@
+package br.com.seniorsolution.proxy;
+
+public class ContaProxy implements Conta {
+	
+	private Conta conta;
+	
+	@Override
+	public void depositar(double valor) {
+		this.saldo+= valor;
+		
+	}
+
+	@Override
+	public void sacar(double valor) {
+		this.saldo-=valor;
+		
+	}
+
+	@Override
+	public double getSaldo() {
+		return this.saldo;
+	}
+
+}
